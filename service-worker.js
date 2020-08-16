@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TenerifeBeachApp/precache-manifest.fb586d9da3009aff8db9cea34625da98.js"
+  "/TenerifeBeachApp/precache-manifest.3dc88fe4c4b816a61fc4f319d32c4ec4.js"
 );
 
 self.addEventListener('message', (event) => {
