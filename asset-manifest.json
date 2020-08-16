@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TenerifeBeachApp/static/css/main.acc487cb.chunk.css",
+    "main.js": "/TenerifeBeachApp/static/js/main.9c281a8a.chunk.js",
+    "main.js.map": "/TenerifeBeachApp/static/js/main.9c281a8a.chunk.js.map",
+    "runtime-main.js": "/TenerifeBeachApp/static/js/runtime-main.a3ffe329.js",
+    "runtime-main.js.map": "/TenerifeBeachApp/static/js/runtime-main.a3ffe329.js.map",
+    "static/js/2.dcc17892.chunk.js": "/TenerifeBeachApp/static/js/2.dcc17892.chunk.js",
+    "static/js/2.dcc17892.chunk.js.map": "/TenerifeBeachApp/static/js/2.dcc17892.chunk.js.map",
+    "index.html": "/TenerifeBeachApp/index.html",
+    "precache-manifest.5421a3e880a203369477bd0270a79d6b.js": "/TenerifeBeachApp/precache-manifest.5421a3e880a203369477bd0270a79d6b.js",
+    "service-worker.js": "/TenerifeBeachApp/service-worker.js",
+    "static/css/main.acc487cb.chunk.css.map": "/TenerifeBeachApp/static/css/main.acc487cb.chunk.css.map",
+    "static/js/2.dcc17892.chunk.js.LICENSE.txt": "/TenerifeBeachApp/static/js/2.dcc17892.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3ffe329.js",
+    "static/js/2.dcc17892.chunk.js",
+    "static/css/main.acc487cb.chunk.css",
+    "static/js/main.9c281a8a.chunk.js"
+  ]
+}
