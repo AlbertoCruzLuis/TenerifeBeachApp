@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02d2941dc603275f08b1a5966191ddaf",
+    "revision": "59b524d7dce3f4ca8723fd75c8335db8",
     "url": "/TenerifeBeachApp/index.html"
   },
   {
-    "revision": "83adc0bcfbb321d09f3e",
+    "revision": "1f3aeb48c90d593bb0e8",
     "url": "/TenerifeBeachApp/static/css/main.acc487cb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TenerifeBeachApp/static/js/2.dcc17892.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83adc0bcfbb321d09f3e",
-    "url": "/TenerifeBeachApp/static/js/main.9c281a8a.chunk.js"
+    "revision": "1f3aeb48c90d593bb0e8",
+    "url": "/TenerifeBeachApp/static/js/main.e8f380df.chunk.js"
   },
   {
     "revision": "26d0231a705f75851423",
