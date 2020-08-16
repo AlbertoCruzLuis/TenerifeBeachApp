@@ -1,0 +1,17 @@
+.footer-container {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+p {
+    color: #ffffff;
+}

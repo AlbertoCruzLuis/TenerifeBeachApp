@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar-name {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar-name > a {
+    color: #ffffff;
+}
+
+.navbar-item {
+    background-color: rgb(36, 80, 131);
+    padding: 20px;
+}
+
+.navbar-item > a {
+    color: #ffffff;
+}
+
+span {
+    font-size: 22px;
+}

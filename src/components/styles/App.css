@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+#root {
+    height: 100%;
+    background-color: rgb(158, 144, 96);
+}
