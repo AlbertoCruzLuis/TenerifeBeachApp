@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
-import '../components/styles/Home.css'
-import ListCard from '../components/ListCard'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import './style.css'
+import ListCard from 'components/ListCard'
+import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
 
 const Home = () => (
     <Fragment>

@@ -1,8 +1,9 @@
 import React from 'react'
+import './style.css'
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import Home from '../pages/Home'
-import BeachDetails from '../pages/BeachDetails'
-import Errors from '../pages/Errors'
+import Home from 'pages/Home'
+import BeachDetails from 'pages/BeachDetails'
+import Errors from 'pages/Errors'
 
 const App = () => (
     <HashRouter>

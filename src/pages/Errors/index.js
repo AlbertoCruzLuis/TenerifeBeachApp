@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react'
-import '../components/styles/Errors.css'
-import NotFound from '../components/Errors/404'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import NotFound from 'components/Errors/404'
+import Navbar from 'components/Navbar'
+import Footer from 'components/Footer'
 
 const Errors = () => (
     <Fragment>
