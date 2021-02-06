@@ -1,23 +1,19 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import axios from 'axios'
 import Card from 'components/Card'
-import API_URL from 'config'
 import './style.css'
 import Pagination from '@material-ui/lab/Pagination';
+import { trackWindowScroll } from 'react-lazy-load-image-component';
+import { useHistory } from 'react-router-dom'
+import { getBeachList } from 'services/DataService'
 
-const ListCard = ({limitItemsPerPage = 5}) => {
+const ListCard = ({limitItemsPerPage = 5, scrollPosition}) => {
     const [beaches, setBeaches] = useState([])
     const [originalBeaches, setOriginalBeaches] = useState([]);
+    const history = useHistory()
 
     useEffect(() => {
-        axios.get(API_URL + 'beachlist/').then(
-            res => {
-                console.log(res)
-                setBeaches((res.data).slice(0,5))
-                setOriginalBeaches(res.data);
-            }
-        ).catch()
-    }, [])
+        getBeachList(setBeaches,setOriginalBeaches,history)
+    }, [history])
 
     const handleChange = (e,page) => {
         let data = originalBeaches
@@ -40,6 +36,7 @@ const ListCard = ({limitItemsPerPage = 5}) => {
                             id={beach._id}
                             name={beach.name}
                             image={beach.image}
+                            scrollPosition={scrollPosition}
                         />
                     )
                 }) }
@@ -53,4 +50,4 @@ const ListCard = ({limitItemsPerPage = 5}) => {
     );
 }
 
-export default ListCard;
+export default trackWindowScroll(ListCard);

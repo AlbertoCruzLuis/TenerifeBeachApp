@@ -1,32 +1,35 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import { useParams } from 'react-router-dom'
-import axios from 'axios'
-import API_URL from 'config'
-import Navbar from 'components/Navbar'
-import Footer from 'components/Footer'
 import './style.css'
+import Layout from 'pages/Layout'
+import { useHistory } from 'react-router-dom'
+import { Helmet } from "react-helmet";
+import Maps from 'components/Maps'
+import { getBeach } from 'services/DataService'
 
 const BeachDetails = () => {
     const [beach, setBeach] = useState([])
-    const { id } = useParams();
+    const history = useHistory()
+    const { id } = useParams()
 
     useEffect(() => {
-        axios.get(API_URL + `beach/${id}/`).then(
-            res => {
-                console.log(res)
-                setBeach(res.data)
-            }
-        ).catch()
-    },[id])
+        getBeach(id, setBeach, history)
+    },[id,history])
 
     const { name, image, location, length, composition } = beach;
+    const maplinks = require('data/PlaceLinks.json')
+    const maplink = maplinks[id].maplink;
 
     return (
         <Fragment>
-            <div className="header">
-                <Navbar />
-            </div>
-            <div className="main">
+            <Helmet>
+                <meta
+                name="description"
+                content={`Tenerife Beach App. Conoce que hacer, como llegar o de que esta hecha la ${name}`}
+                />
+                <title>{`Descubre la ${name} | Tenerife Beach App`}</title>
+            </Helmet>
+            <Layout>
                 <div className="container-beach">
                     <div className="name">
                         <h1>{name}</h1>
@@ -44,11 +47,10 @@ const BeachDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="space"></div>
-            </div>
-            <div className="footer">
-                <Footer />
-            </div>
+                <div className="maps">
+                    <Maps mapLink={maplink} />
+                </div>
+            </Layout>
         </Fragment>
     )
 }

@@ -4,6 +4,7 @@
     flex-direction: column;
     margin: 25px;
     border-radius: 10px;
+    min-height: 150px;
 }
 
 .card:hover {
@@ -25,7 +26,7 @@
     border-bottom-right-radius: 10px;
 }
 
-.card-body > img {
+.lazy-image {
     max-width: 100%;
     max-height: 100%;
     border-bottom-left-radius: 10px;

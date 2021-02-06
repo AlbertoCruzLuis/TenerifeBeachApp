@@ -7,6 +7,12 @@
 }
 
 #root {
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(158, 144, 96);
+}
+
+a {
+    text-decoration: none;
 }

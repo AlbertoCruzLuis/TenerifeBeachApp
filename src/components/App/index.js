@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import './style.css'
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import Home from 'pages/Home'
-import BeachDetails from 'pages/BeachDetails'
-import Errors from 'pages/Errors'
+import Spinner from 'components/Spinner'
+
+const Home = lazy(() => import('pages/Home'))
+const BeachDetails = lazy(() => import('pages/BeachDetails'))
+const Errors = lazy(() => import('pages/Errors'))
 
 const App = () => (
     <HashRouter>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/beach/:id" component={BeachDetails} />
-            <Route component={Errors} />
-        </Switch>
+        <Suspense fallback={<Spinner />}>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/beach/:id" component={BeachDetails} />
+                <Route component={Errors} />
+            </Switch>
+        </Suspense>
     </HashRouter>
 )
 
